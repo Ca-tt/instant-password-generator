@@ -1,0 +1,12 @@
+@import '@scss/variables/base.scss';
+/* Sofia Sans */
+
+html {
+    font-size: $base-font-size;
+}
+
+body {
+    font-size: 1rem;
+    font-family: $base-font-family;
+    color: $base-font-color;
+}
