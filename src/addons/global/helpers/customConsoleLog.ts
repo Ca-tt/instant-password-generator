@@ -1,71 +1,39 @@
-import { reactive } from 'vue';
+import { reactive } from "vue"
 /* save original console log for reusage */
-export let originalLog = window.console.log;
+export let originalLog = window.console.log
 
-export let logsCount = 0;
-export let logArrays: any[] = reactive([]);
+export let logsCount = 0
+export let logArrays: any[] = reactive([])
 
 export function customLog(...messages: any[]) {
-    /* подсчитываем к-во логов */
-    logsCount += 1;
+  /* подсчитываем к-во логов */
+  logsCount += 1
 
-    logArrays.push(messages);
-    originalLog(messages)
+  logArrays.push(messages)
+  originalLog(messages)
 }
 
 export function getTypeOf(data: any) {
-    /* get basic type */
-    let type: any = typeof (data);
+  /* get basic type */
+  let type: any = typeof data
 
-    if (type == 'object') {
-        type = Object.prototype.toString.call(data);
-    }
+  if (type == "object") {
+    type = Object.prototype.toString.call(data)
+  }
 
-    return type;
+  return type
 }
 
 export function arrayFrom(object: any) {
-    let array = []
+  let array = []
 
-    for (const [key, value] of Object.entries(object)) {
-        array.push(key + ': ');
-        array.push(value + ', ');
-    }
+  for (const [key, value] of Object.entries(object)) {
+    array.push(key + ": ")
+    array.push(value + ", ")
+  }
 
-    return array;
+  return array
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // usage example
 /* window.onerror = function(errorMsg){

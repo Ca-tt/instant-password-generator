@@ -4,14 +4,13 @@ $hd: 1240px;
 $fullHD: 1760px;
 
 @mixin tablet {
-    @media screen and (min-width: $tablet) {
-        @content;
-    }
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media screen and (min-width: $desktop) {
-        @content;
-    }
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
 }
-

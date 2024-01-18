@@ -8,32 +8,31 @@
 
 $column-width: 10%;
 @for $size from 1 through 10 {
-    .column.is-#{$size} {
-        flex-basis: calc($column-width * $size);
-    }
+  .column.is-#{$size} {
+    flex-basis: calc($column-width * $size);
+  }
 }
 
-
 .grow-0 {
-    flex-grow: 0;
+  flex-grow: 0;
 }
 
 .grow-1 {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .first {
-    order: -1;
+  order: -1;
 }
 
 .last {
-    order: 1;
+  order: 1;
 }
 
 .end {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }

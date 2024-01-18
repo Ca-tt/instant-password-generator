@@ -1,7 +1,6 @@
 export let spaceProps = {
-    'p-0': {
-        type: Boolean,
-        default: false,
-    },
-    
+  "p-0": {
+    type: Boolean,
+    default: false,
+  },
 }

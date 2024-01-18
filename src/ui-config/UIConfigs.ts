@@ -1,8 +1,8 @@
-import { reactive } from 'vue';
+import { reactive } from "vue"
 
 /* vite compiler options */
 export let viteConfigs = reactive({
-    isErrorOverlayEnebled: true,
-    isFullReloadEnabled: true,
-    isAutoOpenEnebled: true,
+  isErrorOverlayEnebled: true,
+  isFullReloadEnabled: true,
+  isAutoOpenEnebled: true,
 })

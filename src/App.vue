@@ -1,21 +1,19 @@
 <script setup lang="ts">
-import StudyUI from './StudyUI.vue';
-import DeveloperUI from '@/components/DeveloperUI.vue';
-import Lesson from './Lesson.vue';
+import GlobalStyles from "#/GlobalStyles.vue"
+import DeveloperUI from "#/DeveloperUI.vue"
+import PasswordGenerator from "#/PasswordGenerator.vue"
 
-import { globalStyles } from './ui-config/globalStyles';
-
-
+import { globalStyles } from "./ui-config/globalStyles"
 </script>
 
 <template>
   <!-- toggle global styles -->
   <Transition>
-    <StudyUI v-if="globalStyles.enabled" />
+    <GlobalStyles v-if="globalStyles.enabled" />
 
     <div class="no-styles" v-else>
       <Suspense>
-        <Lesson />
+        <PasswordGenerator />
       </Suspense>
     </div>
   </Transition>
@@ -24,8 +22,8 @@ import { globalStyles } from './ui-config/globalStyles';
 </template>
 
 <style lang="scss" scoped>
-@import '@scss/base/custom-reset.scss';
-@import '@scss/helpers/all.scss';
+@import "@scss/base/custom-reset.scss";
+@import "@scss/helpers/all.scss";
 
 .page-content {
   @extend .text-center;
@@ -34,7 +32,7 @@ import { globalStyles } from './ui-config/globalStyles';
 /* Transition component styles */
 .v-enter-active,
 .v-leave-active {
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .v-enter-from,

@@ -1,6 +1,6 @@
 export let positionProps = {
-    'at-bottom': {
-        type: Boolean,
-        default: false,
-    },
+  "at-bottom": {
+    type: Boolean,
+    default: false,
+  },
 }
