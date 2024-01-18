@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue"
 
-import ReloadOn from "#/icons/ReloadOn.vue"
+import ReloadOn from "@components/icons/ReloadOn.vue"
 
 import { viteConfigs } from "@/ui-config/UIConfigs"
 

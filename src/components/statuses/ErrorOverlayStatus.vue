@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue"
 
-import ErrorOverlayIcon from "#/icons/ErrorOverlayIcon.vue"
+import ErrorOverlayIcon from "@components/icons/ErrorOverlayIcon.vue"
 
 import { viteConfigs } from "@/ui-config/UIConfigs"
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Warning from "#/icons/Warning.vue"
+import Warning from "@components/icons/Warning.vue"
 // import { ConsoleErrorsData } from '@/component/sdeveloper-ui/error-handlers/errorHandler';
 </script>
 

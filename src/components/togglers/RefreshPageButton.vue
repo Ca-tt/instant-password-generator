@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import RefreshPageIcon from "#/icons/RefreshPageIcon.vue"
+import RefreshPageIcon from "@components/icons/RefreshPageIcon.vue"
 import { reloadPage } from "@/addons/global/helpers/reloadPage"
 
 import { Ref, ref } from "vue"

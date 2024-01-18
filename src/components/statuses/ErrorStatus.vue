@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, onErrorCaptured } from "vue"
 import type { Ref } from "vue"
-import Warning from "#/icons/Warning.vue"
+import Warning from "@components/icons/Warning.vue"
 
 import { globalConsoleErrors } from "@/@/component/sdeveloper-ui/error-handlers/errorHandler"
 </script>
