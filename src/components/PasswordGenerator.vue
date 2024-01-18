@@ -59,13 +59,16 @@ class PasswordGenerator {
 }
 
 /* here we got our amazing, beautiful, lovely password */
-password.value = new PasswordGenerator(16).getPassword()
+let passwordLength = 32
+
+password.value = new PasswordGenerator(passwordLength).getPassword()
 </script>
 
 <template>
   <div class="password-wrapper">
     <h2 class="title-action">Скопируй пароль:</h2>
     <h1 class="password-text">{{ password }}</h1>
+    <h6>Пароль скопирован ХХХ раз</h6>
   </div>
 </template>
 
@@ -89,6 +92,6 @@ h2 {
 
 .password-text {
   @extend .has-cursor-pointer;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 </style>
