@@ -1,10 +1,31 @@
 @import "@scss/variables/sizes.scss";
 
-.text-center {
+/* ==== ALIGNMENT ==== */
+.text-center
+.has-text-center,
+.has-text-centered {
   text-align: center;
 }
 
-/* SIZES (in rems) */
+/* ==== END ALIGNMENT ==== */
+
+
+/* ==== WEIGHT ==== */
+.has-light-font-weight,
+.light-font-weight {
+  font-weight: 300;
+}
+
+.regular-font-weight,
+.has-regular-font-weight {
+  font-weight: 400;
+}
+
+/* ==== END WEIGHT ==== */
+
+
+
+/* ==== SIZES (in rems) ==== */
 .is-small {
   font-size: $small;
 }
@@ -36,3 +57,5 @@
 .x2-rem {
   font-size: $extra-large;
 }
+
+/* ==== END SIZES ==== */

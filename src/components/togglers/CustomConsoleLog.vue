@@ -16,7 +16,7 @@ let notification = useNotification()
 let isLogsEnabled = loadFromStorage("is-logs-enabled", true)
 
 /* 2. Decide whether logs enabled or disabled, based on storage value */
-let logButtonText = Boolean(isLogsEnabled) ? ref("Disable") : ref("Enable")
+let logButtonText = Boolean(isLogsEnabled) ? ref("Hide") : ref("Show")
 
 function changeLogsStatus() {
   isLogsEnabled = !isLogsEnabled
@@ -24,10 +24,10 @@ function changeLogsStatus() {
   saveToStorage("is-logs-enabled", isLogsEnabled)
 
   if (!isLogsEnabled) {
-    logButtonText.value = "Enable"
+    logButtonText.value = "Show"
     notification.destroyAll()
   } else {
-    logButtonText.value = "Disable"
+    logButtonText.value = "Hide"
     createLogsOnPage()
   }
 }

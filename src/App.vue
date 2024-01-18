@@ -21,7 +21,7 @@ import { globalStyles } from "./ui-config/globalStyles"
   <DeveloperUI />
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "@scss/base/custom-reset.scss";
 @import "@scss/helpers/all.scss";
 
