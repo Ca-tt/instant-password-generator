@@ -14,5 +14,5 @@ export const globalComponents: any = {
   Container: Container,
   Row: Row,
   Column: Column,
-  Text: Text,
+  Text: Text
 }

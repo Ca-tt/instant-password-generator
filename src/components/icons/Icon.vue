@@ -5,16 +5,16 @@ import { propsToClasses } from "@/addons/custom-props/propsToClasses"
 let props = defineProps({
   color: {
     type: String,
-    default: "",
+    default: ""
   },
   size: {
     type: String,
-    default: "",
+    default: ""
   },
   pointer: {
     type: Boolean,
-    default: false,
-  },
+    default: false
+  }
 })
 
 let propsClasses = computed(() => propsToClasses(props))

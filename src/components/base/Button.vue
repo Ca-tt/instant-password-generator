@@ -2,24 +2,24 @@
 defineProps({
   color: {
     type: String,
-    default: "red",
+    default: "red"
   },
   size: {
     type: String,
-    default: "small",
+    default: "small"
   },
   link: {
     type: String,
-    default: "#",
+    default: "#"
   },
   tag: {
     type: String,
-    default: "a",
+    default: "a"
   },
   transition: {
     type: String,
-    default: "a",
-  },
+    default: "a"
+  }
 })
 
 // при клике добавлять классы-транзишены и классы-анимации

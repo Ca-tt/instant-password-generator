@@ -1,14 +1,12 @@
 @import "@scss/variables/sizes.scss";
 
 /* ==== ALIGNMENT ==== */
-.text-center
-.has-text-center,
+.text-center .has-text-center,
 .has-text-centered {
   text-align: center;
 }
 
 /* ==== END ALIGNMENT ==== */
-
 
 /* ==== WEIGHT ==== */
 .has-light-font-weight,
@@ -22,8 +20,6 @@
 }
 
 /* ==== END WEIGHT ==== */
-
-
 
 /* ==== SIZES (in rems) ==== */
 .is-small {
