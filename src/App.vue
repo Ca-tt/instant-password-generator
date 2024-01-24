@@ -13,7 +13,7 @@ import { globalStyles } from "./ui-config/globalStyles";
 
     <div class="no-styles" v-else>
       <Suspense>
-          <PasswordGenerator />
+        <PasswordGenerator />
       </Suspense>
     </div>
   </Transition>

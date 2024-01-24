@@ -62,7 +62,6 @@ class PasswordGenerator {
 let passwordLength = 32;
 
 password.value = new PasswordGenerator(passwordLength).getPassword();
-
 </script>
 
 <template>
