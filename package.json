@@ -13,9 +13,11 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "updatedocs": "rm ./docs -rf && cp -r node_modules/dcodex/docs ."
   },
   "dependencies": {
+    "allincluded.css": "^1.1.0",
     "dcodex": "^1.3.0",
     "naive-ui": "^2.37.3",
     "pinia": "^2.1.7",

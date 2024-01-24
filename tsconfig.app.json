@@ -20,7 +20,7 @@
         "./src/components/"
       ],
       "@scss/": [
-        "./src/scss/"
+        "node_modules/allincluded.css/scss/"
       ],
     }
   }

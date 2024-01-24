@@ -1,8 +1,0 @@
-@import "./../helpers/flex.scss";
-@import "./../layout/flex.scss";
-
-.nav {
-  &.is-vertical {
-    @extend .row;
-  }
-}

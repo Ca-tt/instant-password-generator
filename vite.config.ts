@@ -16,7 +16,7 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src/', import.meta.url)),
       '@components': fileURLToPath(new URL('./src/components/', import.meta.url)),
-      '@scss': fileURLToPath(new URL('./src/scss/', import.meta.url)),
+      '@scss': fileURLToPath(new URL('node_modules/allincluded.css/scss/', import.meta.url)),
     }
   },
   server: {
