@@ -20,7 +20,7 @@ import { globalConsoleErrors } from "@/@/component/sdeveloper-ui/error-handlers/
           'no-hover-bg-i',
           'gap-xs',
           'has-short-transition',
-          { 'is-visible': globalConsoleErrors.count.value },
+          { 'is-visible': globalConsoleErrors.count.value }
         ]"
         quaternary
         type="error"

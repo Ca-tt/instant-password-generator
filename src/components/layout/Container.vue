@@ -5,8 +5,8 @@ import { propsToClasses } from "@/addons/custom-props/propsToClasses"
 let props = defineProps({
   size: {
     type: String,
-    default: "",
-  },
+    default: ""
+  }
 })
 
 let propsClasses = computed(() => propsToClasses(props))

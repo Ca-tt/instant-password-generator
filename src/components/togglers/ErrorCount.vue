@@ -17,7 +17,7 @@ import Warning from "@components/icons/Warning.vue"
           'no-padding',
           'no-hover-bg-i',
           'gap-xs',
-          'has-short-transition',
+          'has-short-transition'
         ]"
         quaternary
         type="error"

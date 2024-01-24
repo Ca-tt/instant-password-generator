@@ -4,5 +4,5 @@ import { reactive } from "vue"
 export let viteConfigs = reactive({
   isErrorOverlayEnebled: true,
   isFullReloadEnabled: true,
-  isAutoOpenEnebled: true,
+  isAutoOpenEnebled: true
 })

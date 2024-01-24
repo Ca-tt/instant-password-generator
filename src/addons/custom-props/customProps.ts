@@ -11,5 +11,5 @@ export let customProps = {
   ...flexProps,
   ...fontProps,
   ...spaceProps,
-  ...positionProps,
+  ...positionProps
 }

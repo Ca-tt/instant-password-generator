@@ -4,7 +4,7 @@ import { propsToClasses } from "@/addons/custom-props/propsToClasses"
 import { customProps } from "@/addons/custom-props//customProps"
 
 let props = defineProps({
-  ...customProps,
+  ...customProps
 })
 
 let propsClasses = computed(() => propsToClasses(props))
