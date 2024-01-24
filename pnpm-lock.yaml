@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  ccodex:
+    specifier: ^1.2.0
+    version: 1.2.0
   naive-ui:
     specifier: ^2.37.3
     version: 2.37.3(vue@3.4.14)
@@ -1355,6 +1358,10 @@ packages:
   /caseless@0.12.0:
     resolution: {integrity: sha512-4tYFyifaFfGacoiObjJegolkwSU4xQNGbVgUiNYVUxbQ2x2lUsFvY4hVgVzGiIe6WLOPqycWXA40l+PWsxthUw==}
     dev: true
+
+  /ccodex@1.2.0:
+    resolution: {integrity: sha512-ViLiCMYD0URO1bYn24gWUyXxOGXpPURL2gPwfdpkRjgyQRX1B8ank0s4EmwtnDVUXh9eLm6YEO+kHCasak5CMA==}
+    dev: false
 
   /chai@4.4.1:
     resolution: {integrity: sha512-13sOfMv2+DWduEU+/xbun3LScLoqN17nBeTLUsmDfKdoiC1fr0n9PU4guu4AhRcOVFk/sW8LyZWHuhWtQZiF+g==}
