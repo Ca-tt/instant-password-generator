@@ -69,6 +69,7 @@ class PasswordGenerator {
 
 password.value = new PasswordGenerator(passwordLength.value).getPassword()
 
+password.value = new PasswordGenerator(passwordLength).getPassword()
 </script>
 
 <template>
