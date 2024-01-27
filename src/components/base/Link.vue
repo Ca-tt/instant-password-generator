@@ -5,12 +5,12 @@ import { propsToClasses } from "@/addons/custom-props/propsToClasses"
 let props = defineProps({
   href: {
     type: String,
-    default: "#",
+    default: "#"
   },
   color: {
     type: String,
-    default: "",
-  },
+    default: ""
+  }
 })
 
 let propsClasses = computed(() => propsToClasses(props))

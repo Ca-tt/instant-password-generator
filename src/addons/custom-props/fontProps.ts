@@ -2,27 +2,27 @@ export let fontProps = {
   /* font sizes */
   "regular-font-size": {
     type: Boolean,
-    default: false,
+    default: false
   },
   "regular-l-font-size": {
     type: Boolean,
-    default: false,
+    default: false
   },
   "larger-font-size": {
     type: Boolean,
-    default: false,
+    default: false
   },
   "large-font-size": {
     type: Boolean,
-    default: false,
+    default: false
   },
   "rem-x2": {
     type: Boolean,
-    default: false,
+    default: false
   },
   "x2-rem": {
     type: Boolean,
-    default: false,
-  },
+    default: false
+  }
   /* colors */
 }

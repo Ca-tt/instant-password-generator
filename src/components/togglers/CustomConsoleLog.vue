@@ -6,7 +6,7 @@ import {
   logArrays,
   originalLog,
   getTypeOf,
-  arrayFrom,
+  arrayFrom
 } from "@/addons/global/helpers/customConsoleLog"
 import { loadFromStorage, saveToStorage } from "@/addons/storage/storage"
 
@@ -84,7 +84,7 @@ function createLogsOnPage() {
         title: "" + firstLog,
         description: secondLog != undefined ? "" + secondLog : "",
         // content: rest ?  : rest '' + ,
-        duration: 99999,
+        duration: 99999
       })
     }
   }

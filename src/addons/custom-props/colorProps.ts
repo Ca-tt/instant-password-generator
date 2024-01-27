@@ -2,18 +2,18 @@ export let colorProps = {
   /* font colors */
   "base-color": {
     type: Boolean,
-    default: false,
+    default: false
   },
   white: {
     type: Boolean,
-    default: false,
+    default: false
   },
   dark: {
     type: Boolean,
-    default: false,
+    default: false
   },
   "light-green": {
     type: Boolean,
-    default: false,
-  },
+    default: false
+  }
 }

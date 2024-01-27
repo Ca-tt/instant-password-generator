@@ -5,12 +5,12 @@ import { propsToClasses } from "@/addons/custom-props/propsToClasses"
 let props = defineProps({
   direction: {
     type: String,
-    default: "left",
+    default: "left"
   },
   interaction: {
     type: String,
-    default: "static",
-  },
+    default: "static"
+  }
 })
 
 let propsClasses = computed(() => propsToClasses(props))

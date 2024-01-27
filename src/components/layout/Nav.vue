@@ -5,8 +5,8 @@ import { propsToClasses } from "@/addons/custom-props/propsToClasses"
 let props = defineProps({
   direction: {
     type: String,
-    default: "",
-  },
+    default: ""
+  }
 })
 
 let propsClasses = computed(() => propsToClasses(props))

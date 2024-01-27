@@ -1,19 +1,18 @@
 <script setup lang="ts">
-import GlobalStyles from "@components/GlobalStyles.vue";
-import DeveloperUI from "@components/DeveloperUI.vue";
-import PasswordGenerator from "@components/PasswordGenerator.vue";
+import GlobalStyles from "@components/GlobalStyles.vue"
+import DeveloperUI from "@components/DeveloperUI.vue"
+import PasswordGenerator from "@components/PasswordGenerator.vue"
 
-import { globalStyles } from "./ui-config/globalStyles";
+import { globalStyles } from "./ui-config/globalStyles"
 </script>
 
 <template>
   <!-- toggle global styles -->
   <Transition>
     <GlobalStyles v-if="globalStyles.enabled" />
-
     <div class="no-styles" v-else>
       <Suspense>
-        <PasswordGenerator />
+          <PasswordGenerator />
       </Suspense>
     </div>
   </Transition>
