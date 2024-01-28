@@ -13,14 +13,14 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "@/": [
-        "./src/"
+      "@/*": [
+        "./src/*"
       ],
-      "@components/": [
-        "./src/components/"
+      "@components/*": [
+        "./src/components/*"
       ],
-      "@scss/": [
-        "./src/scss/"
+      "@scss/*": [
+        "./src/scss/*"
       ],
     }
   }

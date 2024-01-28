@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { ref, onMounted, watch } from "vue"
+import { ref } from "vue"
+import { NSlider, useMessage } from "naive-ui"
 import { lettersSymbols, numbersSymbols, singsSymbols } from "@/ts/symbols"
-import { NSpace, NSlider, NInputNumber } from "naive-ui"
+
+let message = useMessage()
 
 let password = ref("1234567qwerty")
 
@@ -61,26 +63,21 @@ class PasswordGenerator {
   }
 }
 
-/* here we got our amazing, beautiful, lovely password */
-
-// watch(passwordLength, (newPasswordLength) => {
-//   passwordLength.value = newPasswordLength.length
-// })
+function showModal(): void {
+  message.success("Пароль скопирован! Теперь используй его", {
+    duration: 99999
+  })
+}
 
 password.value = new PasswordGenerator(passwordLength.value).getPassword()
-
-password.value = new PasswordGenerator(passwordLength).getPassword()
 </script>
 
 <template>
   <div class="password-wrapper">
     <h2 class="title-action">Скопируй пароль:</h2>
-    <h1 class="password-text">{{ password }}</h1>
+    <h1 class="password-text" @click="showModal">{{ password }}</h1>
     <h6>Пароль скопирован ХХХ раз</h6>
-    <n-space vertical>
-      <n-slider v-model:value="passwordLength" :step="2" />
-      <n-input-number v-model:value="passwordLength" size="small" />
-    </n-space>
+    <NSlider v-model:value="passwordLength" :step="2" />
   </div>
 </template>
 
