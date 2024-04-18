@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import PasswordWrapper from "@/password-generator/components/PasswordWrapper.vue";
-import PasswordGenerator from "@/password-generator/PasswordGenerator.vue"
 
 </script>
 
@@ -8,7 +7,6 @@ import PasswordGenerator from "@/password-generator/PasswordGenerator.vue"
   <Theme full-height x-y-center>
     <div class="page-content">
       <Row x-y-center>
-        <!-- lessons -->
         <Column>
           <Suspense>
             <PasswordWrapper />

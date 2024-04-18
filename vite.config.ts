@@ -1,33 +1,30 @@
-import { fileURLToPath, URL } from 'node:url'
+import { fileURLToPath, URL } from "node:url"
 
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import FullReload from 'vite-plugin-full-reload';
+import { defineConfig } from "vite"
+import vue from "@vitejs/plugin-vue"
+import FullReload from "vite-plugin-full-reload"
 
-import { viteConfigs } from './src/developer-ui/ui-config/UIConfigs';
+import { viteConfigs } from "./src/developer-ui/ui-config/UIConfigs"
+
+const fullReloadPlugin = viteConfigs.isFullReloadEnabled
+  ? FullReload("./src/**/*", { always: false })
+  : undefined
 
 /* vite ui configs, imported from study */
 export default defineConfig({
-  plugins: [
-    vue({}),
-    viteConfigs.isFullReloadEnabled ? FullReload('./src/**/*', { always: false }) : ''
-  ],
+  base: './',
+  plugins: [vue({}), fullReloadPlugin],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src/', import.meta.url)),
-      '@components': fileURLToPath(new URL('./src/components/', import.meta.url)),
-      '@scss': fileURLToPath(new URL('./src/scss/', import.meta.url)),
+      "@": fileURLToPath(new URL("./src/", import.meta.url)),
+      "@components": fileURLToPath(new URL("./src/components/", import.meta.url)),
+      "@scss": fileURLToPath(new URL("./src/scss/", import.meta.url))
     }
   },
   server: {
     hmr: {
-      overlay: viteConfigs.isErrorOverlayEnebled,
+      overlay: viteConfigs.isErrorOverlayEnebled
     },
-    open: viteConfigs.isAutoOpenEnebled,
+    open: viteConfigs.isAutoOpenEnebled
   }
 })
-
-
-
-
-
