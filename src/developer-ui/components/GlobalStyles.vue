@@ -4,28 +4,24 @@ import PasswordWrapper from "@/password-generator/components/PasswordWrapper.vue
 </script>
 
 <template>
-  <Theme full-height x-y-center>
-    <div class="page-content">
-      <Row x-y-center>
-        <Column>
-          <Suspense>
+  <Theme full-height>
+    <!-- <div class="page-content"> -->
+      <!-- <Row> -->
+        <!-- <Column> -->
+          <!-- <Suspense> -->
             <PasswordWrapper />
-          </Suspense>
-        </Column>
-      </Row>
-    </div>
+          <!-- </Suspense> -->
+        <!-- </Column> -->
+      <!-- </Row> -->
+    <!-- </div> -->
   </Theme>
 </template>
 
-<style lang="scss">
-@import "@scss/rules/all.scss";
+<style lang="scss" scoped>
+@import "@scss/rules/spaces.scss";
+// @import "@scss/rules/flex.scss";
 
-.message {
-  font-size: 2em;
-}
-
-.page-content {
-  @extend .p-r;
-  flex-basis: 100%;
-}
+// .page-content {
+//   @extend .p-r;
+// }
 </style>

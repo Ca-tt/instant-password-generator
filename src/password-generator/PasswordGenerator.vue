@@ -6,12 +6,12 @@ import { NaiveModal } from './ts/Modals'
 import { PasswordGenerator } from './ts/PasswordGenerator'
 
 /* page static */
-let actionText = ref('Нажми на пароль, чтобы скопировать:')
+let actionText = ref('Нажми на пароль, чтобы его скопировать')
 
 
 /* password generator */
 let password = ref("#123456.7.qwertY@123$")
-let passwordLength = 32
+let passwordLength = 16
 password.value = new PasswordGenerator(passwordLength).getPassword()
 
 
@@ -24,8 +24,8 @@ let modal = useMessage()
 function copyPassword(): void {
   navigator.clipboard.writeText(password.value)
 
-  const successModal = new NaiveModal(modal, "Пароль скопирован 👌 Спасибо, что создаёшь пароли именно у нас!", {
-    duration: 99999,
+  const successModal = new NaiveModal(modal, "Пароль у тебя 👌 Спасибо, что копируешь пароли именно у нас!", {
+    duration: 5000,
     closable: true,
   })
   successModal.createSuccessModal()
@@ -47,15 +47,27 @@ function copyPassword(): void {
 </template>
 
 <style lang="scss">
-@import "@scss/rules/space.scss";
+@import "@scss/rules/spaces.scss";
 @import "@scss/rules/fonts.scss";
 @import "@scss/rules/hover.scss";
 @import "@scss/rules/media.scss";
 @import "@scss/settings/fonts.scss";
+@import "@scss/settings/colors.scss";
+
 
 .password-wrapper {
-  @extend .has-text-centered;
+  @extend .has-text-centered, .p-r;
+  height: 50vh;
+  margin: 15vh 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  @include mobile-large {
+    margin: 10vh 0 0 0;
+  }
 }
+
 
 h1,
 h2,
@@ -65,17 +77,17 @@ h3 {
 
 .copy-action {
   @extend .has-regular-font-weight;
-  margin: 0 0 .75rem 0;
 }
 
 $greenColor: #42b883;
 
 .password-text {
-  @extend .has-cursor-pointer;
+  @extend .has-cursor-pointer, .color-blue;
   word-wrap: break-word;
+  text-decoration: underline;
 
   &:hover {
-    color: darken($greenColor, 10%);
+    color: lighten($vue-blue, 20%);
   }
 }
 

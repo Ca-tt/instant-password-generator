@@ -26,7 +26,7 @@ let tooltipText: Ref = ref("Refresh Page")
 </template>
 
 <style lang="scss">
-@import "@scss/configs/colors.scss";
+@import "@scss/settings/colors.scss";
 @import "@scss/rules/hover.scss";
 
 .refresh-page {

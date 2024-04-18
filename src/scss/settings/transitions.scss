@@ -6,3 +6,7 @@ $is-long: 1s;
 html {
     transition: all $is-short;
 }
+
+h1, h2, h3, p {
+    transition: color $is-short;
+}

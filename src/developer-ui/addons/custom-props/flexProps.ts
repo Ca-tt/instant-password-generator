@@ -7,6 +7,10 @@ export let flexProps = {
     type: Boolean,
     default: false,
   },
+  "flex-column": {
+    type: Boolean,
+    default: false,
+  },
   /* justify-content */
   "x-center": {
     type: Boolean,

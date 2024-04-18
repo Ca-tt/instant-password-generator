@@ -98,5 +98,5 @@ createLogsOnPage()
 </template>
 
 <style lang="scss" scoped>
-@import "@scss/rules/space.scss";
+@import "@scss/rules/spaces.scss";
 </style>

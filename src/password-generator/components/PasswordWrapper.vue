@@ -2,10 +2,11 @@
 import { NMessageProvider } from 'naive-ui'
 import PasswordGenerator from '@/password-generator/PasswordGenerator.vue'
 
+const modalLimit = 2
 </script>
 
 <template>
-    <NMessageProvider placement="bottom">
+    <NMessageProvider placement="bottom" :max="modalLimit">
         <PasswordGenerator />
     </NMessageProvider>
 </template>

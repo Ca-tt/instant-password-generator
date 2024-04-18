@@ -1,8 +1,29 @@
+/* standart color palette */
+$black: #100f0fdc;
+$white-milk: #eee7e7dc;
+$gray: #36413e;
+$dark-gray: #333;
+$red: #e62428;
+$burgundy: #511717;
+$black-red: #2e0c0c;
+$yellow: rgba(255, 255, 197, 0.86);
+$light-green: #5cdb93;
+
+$naive-green: #18a058;
+$naive-red: #de576d;
+
+$vue-blue: #3498db;
+$vue-green: #2ecc71;
+$vue-red: #e74c3c;
+
+
+/* settings */
+$base-font-color: $gray;
+
 body {
     color: $base-font-color;
-    font-family: $base-font-family;
 }
 
-.base-color {
-    color: $base-font-color;
+.color-blue {
+    color: $vue-blue
 }
