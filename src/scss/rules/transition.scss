@@ -1,0 +1,11 @@
+@import "@scss/configs/transitions.scss";
+@import "@scss/settings/transitions.scss";
+
+.base-transition {
+  transition: all $is-standard;
+}
+
+.short-transition,
+.has-short-transition {
+  transition: all $is-short;
+}

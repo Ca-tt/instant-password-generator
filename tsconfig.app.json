@@ -14,13 +14,13 @@
     "baseUrl": ".",
     "paths": {
       "@/": [
-        "./src/"
+        "./src/*"
       ],
       "@components/": [
-        "./src/components/"
+        "./src/components/*"
       ],
       "@scss/": [
-        "node_modules/allincluded.css/scss/"
+        "./src/scss/"
       ],
     }
   }

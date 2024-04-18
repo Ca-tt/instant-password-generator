@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import FullReload from 'vite-plugin-full-reload';
 
-import { viteConfigs } from './src/ui-config/UIConfigs';
+import { viteConfigs } from './src/developer-ui/ui-config/UIConfigs';
 
 /* vite ui configs, imported from study */
 export default defineConfig({
@@ -16,7 +16,7 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src/', import.meta.url)),
       '@components': fileURLToPath(new URL('./src/components/', import.meta.url)),
-      '@scss': fileURLToPath(new URL('node_modules/allincluded.css/scss/', import.meta.url)),
+      '@scss': fileURLToPath(new URL('./src/scss/', import.meta.url)),
     }
   },
   server: {

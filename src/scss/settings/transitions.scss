@@ -1,0 +1,8 @@
+/* transitions */
+$is-short: 0.3s;
+$is-standard: 0.7s;
+$is-long: 1s;
+
+html {
+    transition: all $is-short;
+}

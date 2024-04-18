@@ -1,0 +1,81 @@
+// @import '@scss/configs/fonts.scss';
+@import '@scss/configs/media.scss';
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;200;400;700;900&display=swap");
+
+/* families */
+$base-font-family: "Sofia Sans", "Inter", "Arial", sans-serif;
+
+
+/* responsive */
+$font-size-mobile: 20px;
+$font-size-mobile-large: 19px;
+$font-size-tablet: 18px;
+$font-size-pc: 17px;
+
+$h1-font-size: 1.75rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.25rem;
+
+$base-font-size: 1rem;
+
+/* components */
+$modal-font-size: .8rem;
+
+/* responsive fonts */
+html {
+    font-size: $font-size-mobile;
+}
+
+html {
+    @include mobile-large {
+        font-size: $font-size-mobile-large;
+    }
+}
+
+html {
+    @include tablet {
+        font-size: $font-size-tablet;
+    }
+}
+
+html {
+    @include pc {
+        font-size: $font-size-pc;
+    }
+}
+
+body {
+    font-size: $base-font-size;
+}
+
+body {
+    font-family: $base-font-family;
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-size: $h3-font-size;
+}
+
+/* password generator text customization */
+.copy-action {
+    line-height: $h2-font-size;
+}
+
+.password-text {
+    line-height: $h3-font-size;
+}
+
+.n-message .n-message__content {
+    font-size: $modal-font-size;
+}

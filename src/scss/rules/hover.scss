@@ -1,0 +1,16 @@
+.pointer,
+.is-pointer,
+.is-cursor,
+.has-cursor-pointer {
+  cursor: pointer;
+}
+
+.no-hover-bg:hover {
+  background: none;
+  background-color: transparent;
+}
+
+.no-hover-bg-i:hover {
+  background: none !important;
+  background-color: transparent !important;
+}

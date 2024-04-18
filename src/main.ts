@@ -1,19 +1,17 @@
-// import './assets/main.css'
-
 import { createApp } from "vue"
 import { createPinia } from "pinia"
 
 import App from "./App.vue"
 import router from "./router"
 
-import { naive } from "./addons/naive-components/naive-components"
+import { naive } from "./developer-ui/addons/naive-components/naive-components"
 
 /* Global components & their props */
-import { globalComponents } from "./addons/globalComponents"
-import { propsToClasses } from "./addons/custom-props/propsToClasses"
+import { globalComponents } from "./developer-ui/addons/globalComponents"
+import { propsToClasses } from "./developer-ui/addons/custom-props/propsToClasses"
 
 /* control console log */
-import { customLog } from "./addons/global/helpers/customConsoleLog"
+import { customLog } from "./developer-ui/addons/global/helpers/customConsoleLog"
 
 const app = createApp(App)
 

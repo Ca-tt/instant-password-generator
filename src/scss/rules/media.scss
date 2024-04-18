@@ -1,0 +1,38 @@
+@import '@scss/configs/media';
+
+@mixin mobile-large {
+  @media screen and (min-width: $mobile-large) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+/* alias for desktop */
+@mixin pc {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin hd {
+  @media screen and (min-width: $hd) {
+    @content;
+  }
+}
+
+@mixin fullhd {
+  @media screen and (min-width: $fullhd) {
+    @content;
+  }
+}
