@@ -24,8 +24,22 @@ let isDeveloperUIVisible = false
 </template>
 
 <style lang="scss">
-@import "@scss/settings/reset.scss";
+@import "@scss/settings/all.scss";
 @import "@scss/rules/all.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 10vh 0;
+}
 
 .page-content {
   @extend .text-center;

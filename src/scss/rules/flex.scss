@@ -1,24 +1,39 @@
-@import "@scss/configs/spaces.scss";
+@import "@scss/settings/spaces.scss";
 
+
+/* flex */
 .flex,
 .is-flex {
   display: flex;
 }
 
+/* row */
 .row {
   @extend .flex;
   flex-wrap: wrap;
 }
 
+/* justify-content */
 .right {
   justify-content: flex-end;
 }
 
 .between,
+.space-between,
 .columns-between {
   justify-content: space-between;
 }
 
+
+.x-center {
+  justify-content: center;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+/* align-items */
 .y-center,
 .is-y-centered {
   align-items: center;
@@ -29,9 +44,8 @@
   align-items: end;
 }
 
-.x-center {
-  justify-content: center;
-}
+
+
 
 .x-y-center {
   @extend .flex, .x-center, .y-center;

@@ -19,8 +19,8 @@ let propsClasses = computed(() => propsToClasses(props))
 </template>
 
 <style lang="scss" scoped>
-@import "@scss/configs/spaces.scss";
-@import "@scss/rules/media.scss";
+@import "@scss/settings/all.scss";
+@import "@scss/rules/all.scss";
 
 .container {
   padding: $regular;

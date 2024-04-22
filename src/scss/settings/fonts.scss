@@ -1,5 +1,4 @@
-// @import '@scss/configs/fonts.scss';
-@import '@scss/configs/media.scss';
+@import './media.scss';
 @import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;200;400;700;900&display=swap");
 
 /* families */
@@ -8,13 +7,14 @@ $base-font-family: "Sofia Sans", "Inter", "Arial", sans-serif;
 
 /* responsive */
 $font-size-mobile: 20px;
-$font-size-mobile-large: 20px;
-$font-size-tablet: 20px;
+$font-size-mobile-large: 19px;
+$font-size-tablet: 19px;
 $font-size-pc: 20px;
 
 $h1-font-size: 1.75rem;
 $h2-font-size: 1.5rem;
 $h3-font-size: 1.5rem;
+$h6-font-size: 0.85rem;
 
 $base-font-size: 1rem;
 
@@ -62,24 +62,35 @@ h2 {
 
 h3,
 h4,
-h5,
-h6 {
+h5 {
     font-size: $h3-font-size;
 }
 
+h6 {
+    font-size: $h6-font-size;
+}
 
-/* customization */
+
+// * customization 
 .copy-action {
     font-weight: 300;
 }
 
-/* password generator text customization */
-.copy-action {
+// ! hotfixes 
+h1 {
+    line-height: $h1-font-size;
+}
+
+h2 {
     line-height: $h2-font-size;
 }
 
-.password-text {
+h3 {
     line-height: $h3-font-size;
+}
+
+h6 {
+    line-height: $h6-font-size;
 }
 
 .n-message .n-message__content {
