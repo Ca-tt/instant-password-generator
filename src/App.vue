@@ -15,11 +15,6 @@ import PasswordWrapper from "@/PasswordWrapper.vue"
   box-sizing: border-box;
 }
 
-// html,
-// body {
-//   overflow: hidden;
-// }
-
 body {
   margin: 0;
 }

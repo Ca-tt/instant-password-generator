@@ -61,7 +61,7 @@ function copyPassword(): void {
 @import "@scss/settings/all.scss";
 
 .rows-between {
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,7 +70,7 @@ function copyPassword(): void {
 .password-wrapper {
   @extend .has-text-centered;
   flex-grow: 1;
-  padding: 10vh 0 0 0;
+  padding: 10dvh 0 0 0;
   display: flex;
   flex-direction: column;
 
