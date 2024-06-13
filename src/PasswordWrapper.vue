@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { NMessageProvider } from 'naive-ui'
-import PasswordGenerator from '@/password-generator/PasswordGenerator.vue'
+import PasswordGenerator from '@/PasswordGenerator.vue'
 
 const modalLimit = 2
 </script>

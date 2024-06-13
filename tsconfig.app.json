@@ -16,8 +16,20 @@
       "@": [
         "./src/*"
       ],
-      "@components": [
-        "./src/components/*"
+      "@ts": [
+        "./src/ts/*"
+      ],
+      "@data": [
+        "./src/data/*"
+      ],
+      "@global": [
+        "./src/global/*"
+      ],
+      "@layout": [
+        "./src/components/layout/*"
+      ],
+      "@generator": [
+        "./src/components/generator/*"
       ],
       "@scss": [
         "./src/scss/*"

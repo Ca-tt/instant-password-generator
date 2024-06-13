@@ -1,20 +1,18 @@
 <script setup lang="ts">
 import { ref } from "vue"
 import { useMessage } from 'naive-ui'
+import { NaiveModal } from '@/ts/Modals'
 
-import { NaiveModal } from './ts/Modals'
-import { PasswordGenerator } from './ts/PasswordGenerator'
+/* languages */
+import LanguagesSwitch from '@generator/LanguagesSwitch.vue'
+import { siteLanguage } from '@ts/SiteLanguage'
 
-/* page static */
-const titleText = ref('Мгновенный генератор паролей 🚀')
-const actionText = ref('Нажми на пароль, чтобы его скопировать')
-
+import { PasswordGenerator } from '@/ts/PasswordGenerator'
 
 /* password generator */
 let password = ref("#123456.7.qwertY@123$")
 let passwordLength = 16
 password.value = new PasswordGenerator(passwordLength).getPassword()
-
 
 /* click count */
 let isCountVisible = false
@@ -25,30 +23,36 @@ let modal = useMessage()
 function copyPassword(): void {
   navigator.clipboard.writeText(password.value)
 
-  const successModal = new NaiveModal(modal, "Пароль скопирован 👌 Спасибо, что копируешь пароли именно у нас!", {
+  const successModal = new NaiveModal(modal, siteLanguage.extractText('thankYouMessage'), {
     duration: 5000,
     closable: true,
   })
   successModal.createSuccessModal()
 }
 
-
 </script>
 
 <template>
-  <section class="password-wrapper space-between">
-    <h1 class="title">{{ titleText }}</h1>
+  <section class="rows-between">
+    <section class="password-wrapper space-between">
+      <!-- title -->
+      <h1 class="title">{{ siteLanguage.extractText('siteTitle') }}</h1>
 
-    <div>
-      <div class="row x-center">
-        <span class="emoji-hint">👉</span>
-        <h3 class="password-text undertitle" @click="copyPassword"> {{ password }}</h3>
+      <div>
+        <div class="row x-center">
+          <!-- password -->
+          <span class="emoji-hint">👉</span>
+          <h3 class="password-text undertitle" @click="copyPassword"> {{ password }}</h3>
+        </div>
+        <h6 class="copy-action subtitle">{{ siteLanguage.extractText('copyActionMessage') }}</h6>
       </div>
-      <h6 class="copy-action subtitle">{{ actionText }}</h6>
-    </div>
 
-    <!-- hidden -->
-    <h6 v-if="isCountVisible" hidden>Пароль скопирован ХХХ раз</h6>
+      <!-- hidden -->
+      <h6 v-if="isCountVisible" hidden>{{ siteLanguage.extractText('copyCounter') }}</h6>
+
+      <!-- tabs -->
+      <LanguagesSwitch></LanguagesSwitch>
+    </section>
   </section>
 </template>
 
@@ -56,9 +60,17 @@ function copyPassword(): void {
 @import "@scss/rules/all.scss";
 @import "@scss/settings/all.scss";
 
+.rows-between {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .password-wrapper {
   @extend .has-text-centered;
-  height: 60vh;
+  flex-grow: 1;
+  padding: 10vh 0 0 0;
   display: flex;
   flex-direction: column;
 

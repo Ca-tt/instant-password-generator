@@ -1,4 +1,4 @@
-import { lettersSymbols, numbersSymbols, singsSymbols, Symbol } from "./Symbols"
+import { lettersSymbols, numbersSymbols, singsSymbols, Symbol } from "../data/Symbols"
 
 export class PasswordGenerator {
   length = 16
