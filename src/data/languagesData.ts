@@ -1,14 +1,11 @@
 export const supportedLanguages = [
-  "English",
-  "Espanol",
   "Russian",
   "Ukrainian",
-  /* add support later */
-  /* specific */
+  "English",
+  "Espanol",
   "Chinese",
   "Japanese",
   "Arabic",
-  /* less commonly used */
   "Hindi",
   "French",
   "Bengali",
@@ -17,10 +14,10 @@ export const supportedLanguages = [
 
 export const siteContent = {
   siteTitle: {
-    English: "Instant Password Generator 🚀",
-    Espanol: "Generador de contraseñas instantáneo 🚀",
     Russian: "Мгновенный генератор паролей 🚀",
     Ukrainian: "Миттєвий генератор паролів 🚀",
+    English: "Instant Password Generator 🚀",
+    Espanol: "Generador de contraseñas instantáneo 🚀",
     Chinese: "即时密码生成器 🚀",
     Japanese: "インスタントパスワードジェネレーター 🚀",
     Arabic: "مولد كلمات المرور الفوري 🚀",
@@ -30,10 +27,10 @@ export const siteContent = {
     Portuguese: "Gerador de Senhas Instantâneo 🚀"
   },
   copyActionMessage: {
-    English: "Hit the password to copy",
-    Espanol: "Presiona la contraseña para copiar",
     Russian: "Нажми на пароль, чтобы его скопировать",
     Ukrainian: "Натисніть на пароль, щоб скопіювати",
+    English: "Hit the password to copy",
+    Espanol: "Presiona la contraseña para copiar",
     Chinese: "点击密码复制",
     Japanese: "パスワードをクリックしてコピー",
     Arabic: "اضغط على كلمة المرور لنسخها",
@@ -43,10 +40,10 @@ export const siteContent = {
     Portuguese: "Clique na senha para copiar"
   },
   thankYouMessage: {
-    English: "Password copied 👌 Thank you for staying with us!",
-    Espanol: "Contraseña copiada 👌 ¡Gracias por copiar contraseñas con nosotros!",
     Russian: "Пароль скопирован 👌 Спасибо, что копируешь пароли именно у нас!",
     Ukrainian: "Пароль скопійовано 👌 Дякуємо, що копіюєте паролі саме у нас!",
+    English: "Password copied 👌 Thank you for staying with us!",
+    Espanol: "Contraseña copiada 👌 ¡Gracias por copiar contraseñas con nosotros!",
     Chinese: "密码已复制 👌 感谢您与我们一起复制密码！",
     Japanese:
       "パスワードがコピーされました 👌 私たちと一緒にパスワードをコピーしていただきありがとうございます！",
@@ -57,10 +54,10 @@ export const siteContent = {
     Portuguese: "Senha copiada 👌 Obrigado por copiar senhas connosco!"
   },
   copyCounter: {
-    English: "Password copied XXX times",
-    Espanol: "Contraseña copiada XXX veces",
     Russian: "Пароль скопирован ХХХ раз",
     Ukrainian: "Пароль скопійовано ХХХ разів",
+    English: "Password copied XXX times",
+    Espanol: "Contraseña copiada XXX veces",
     Chinese: "密码已复制 XXX 次",
     Japanese: "パスワードが XXX 回コピーされました",
     Arabic: "تم نسخ كلمة المرور XXX مرة",

@@ -8,8 +8,8 @@ export class SiteLanguage {
     this.siteContent = siteContent
 
     /* languages */
-    this.defaultLanguage = "English"
-    this.activeLanguage = "English"
+    this.defaultLanguage = "Russian"
+    this.activeLanguage = "Russian"
   }
 
   getActiveLanguage() {
