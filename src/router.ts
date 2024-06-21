@@ -1,5 +1,4 @@
 import { createWebHistory, createRouter } from "vue-router"
-// import PasswordGenerator from "@/PasswordGenerator.vue"
 import { siteLanguage } from "@ts/SiteLanguage"
 
 const routes = [
