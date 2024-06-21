@@ -1,19 +1,29 @@
 <script setup lang="ts">
 import { NTabs, NTab } from 'naive-ui'
 import { siteLanguage } from '@ts/SiteLanguage'
+import { useRoute, useRouter } from 'vue-router'
+
+const router = useRouter()
+const route = useRoute()
+
 
 /** language tab click handler */
 function updateLanguage(newLanguage: string) {
     siteLanguage.activeLanguage = newLanguage
+    router.push(`/${newLanguage}`)
 }
 </script>
 
 <template>
+    <!-- 
+        code - language short code
+        name - language full name
+    -->
     <section class="languages">
         <NTabs type="segment" :default-value="siteLanguage.defaultLanguage" size="small" @update:value="updateLanguage"
             animated v-model:value="siteLanguage.activeLanguage">
-            <NTab v-for="language in siteLanguage.supportedLanguages" :key="language" :name="language"
-                :tab="language" />
+            <NTab v-for="language in siteLanguage.supportedLanguages" :key="language.name" :name="language.code"
+                :tab="language.name" />
         </NTabs>
     </section>
 

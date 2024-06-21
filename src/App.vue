@@ -3,7 +3,9 @@ import PasswordWrapper from "@/PasswordWrapper.vue"
 </script>
 
 <template>
-  <PasswordWrapper />
+  <PasswordWrapper>
+    <RouterView />
+  </PasswordWrapper>
 </template>
 
 <style lang="scss">

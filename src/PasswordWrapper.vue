@@ -7,7 +7,7 @@ const modalLimit = 2
 
 <template>
     <NMessageProvider placement="bottom" :max="modalLimit">
-        <PasswordGenerator />
+        <slot></slot>
     </NMessageProvider>
 </template>
 

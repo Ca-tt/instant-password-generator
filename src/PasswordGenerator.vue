@@ -2,12 +2,24 @@
 import { ref } from "vue"
 import { useMessage } from 'naive-ui'
 import { NaiveModal } from '@/ts/Modals'
+import { useRoute, useRouter } from 'vue-router'
 
 /* languages */
 import LanguagesSwitch from '@generator/LanguagesSwitch.vue'
 import { siteLanguage } from '@ts/SiteLanguage'
 
 import { PasswordGenerator } from '@/ts/PasswordGenerator'
+
+/* router */
+/* props for router */
+defineProps({
+  language: String
+})
+
+const router = useRouter()
+const route = useRoute()
+
+let activeRouteLanguage = route.params.language
 
 /* password generator */
 let password = ref("#123456.7.qwertY@123$")
@@ -29,6 +41,8 @@ function copyPassword(): void {
   })
   successModal.createSuccessModal()
 }
+
+
 
 </script>
 
