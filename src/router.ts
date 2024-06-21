@@ -5,7 +5,7 @@ import { siteLanguage } from "@ts/SiteLanguage"
 const routes = [
   {
     path: "/",
-    component: () => import('@/PasswordGenerator.vue'),
+    component: () => import("@/PasswordGenerator.vue"),
     // component: PasswordGenerator,
     props: { language: "en" },
     beforeEnter: (to, from, next) => {
@@ -16,7 +16,7 @@ const routes = [
   },
   {
     path: "/:language",
-    component: () => import('@/PasswordGenerator.vue'),
+    component: () => import("@/PasswordGenerator.vue")
   }
 ]
 
@@ -28,7 +28,7 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   let routeLanguage = to.params.language
 
-  siteLanguage.updateActiveLanguage(routeLanguage) 
+  siteLanguage.updateActiveLanguage(routeLanguage)
   siteLanguage.updateMetaData()
 
   next()
